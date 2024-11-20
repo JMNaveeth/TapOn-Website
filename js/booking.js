@@ -37,3 +37,5 @@ export class BookingManager {
       slideIn(this.repairFields);
     }
   }
+
+}
