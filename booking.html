@@ -41,5 +41,57 @@
             <label for="phone">Phone</label>
             <input type="tel" id="phone" name="phone" required>
           </div>
+
+          
+        <div id="tool-fields" class="hidden">
+            <div class="form-group">
+              <label for="tool">Tool Required</label>
+              <select id="tool" name="tool">
+                <option value="">Select a tool</option>
+                <option value="drill">Power Drill</option>
+                <option value="saw">Circular Saw</option>
+                <option value="ladder">Extension Ladder</option>
+                <option value="pressure-washer">Pressure Washer</option>
+              </select>
+            </div>
+  
+            <div class="form-group">
+              <label for="rental-date">Rental Date</label>
+              <input type="date" id="rental-date" name="rental-date">
+            </div>
+  
+            <div class="form-group">
+              <label for="rental-duration">Duration (days)</label>
+              <input type="number" id="rental-duration" name="rental-duration" min="1">
+            </div>
+          </div>
+  
+          <div id="repair-fields" class="hidden">
+            <div class="form-group">
+              <label for="equipment">Equipment Type</label>
+              <input type="text" id="equipment" name="equipment">
+            </div>
+  
+            <div class="form-group">
+              <label for="issue">Describe the Issue</label>
+              <textarea id="issue" name="issue" rows="4"></textarea>
+            </div>
+  
+            <div class="form-group">
+              <label for="preferred-date">Preferred Service Date</label>
+              <input type="date" id="preferred-date" name="preferred-date">
+            </div>
+          </div>
+  
+          <button type="submit" class="btn">Submit Booking</button>
+        </form>
+      </main>
+  
+      <footer>
+        <p>© 2024 TapOn. All rights reserved.</p>
+        <p>Contact: info@tapon.com | Tel: (555) 123-4567</p>
+      </footer>
+    </body>
+  </html>
   
 
