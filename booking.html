@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Book Service - TapOn</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/booking.html" aria-current="page">Book Service</a>
+      <a href="/parts.html">Parts</a>
+    </nav>
+
+    <main>
+      <h1>Book a Service</h1>
+      
+      <form class="booking-form">
+        <div class="form-group">
+          <label for="service-type">Service Type</label>
+          <select id="service-type" name="service-type" required>
+            <option value="">Select a service</option>
+            <option value="rental">Tool Rental</option>
+            <option value="repair">Repair Service</option>
+          </select>
+        </div>
