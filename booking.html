@@ -15,9 +15,27 @@
     </nav>
 
     <main>
-      <h1>Book a Service</h1>
+      <div class="hero">
+        <h1>Book a Service</h1>
+        <p>Quick and easy booking process for all your tool needs</p>
+      </div>
       
       <form class="booking-form">
+        <div class="progress-bar">
+          <div class="progress-step active">
+            <div class="step-number">1</div>
+            <span>Service Type</span>
+          </div>
+          <div class="progress-step">
+            <div class="step-number">2</div>
+            <span>Details</span>
+          </div>
+          <div class="progress-step">
+            <div class="step-number">3</div>
+            <span>Contact</span>
+          </div>
+        </div>
+
         <div class="form-group">
           <label for="service-type">Service Type</label>
           <select id="service-type" name="service-type" required>
@@ -27,23 +45,25 @@
           </select>
         </div>
 
-        <div class="form-group">
+        <div class="form-row">
+          <div class="form-group">
             <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" required>
-          </div>
-  
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-          </div>
-  
-          <div class="form-group">
-            <label for="phone">Phone</label>
-            <input type="tel" id="phone" name="phone" required>
+            <input type="text" id="name" name="name" required placeholder="John Doe">
           </div>
 
-          
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="john@example.com">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" required placeholder="(555) 123-4567">
+        </div>
+
         <div id="tool-fields" class="hidden">
+          <div class="form-row">
             <div class="form-group">
               <label for="tool">Tool Required</label>
               <select id="tool" name="tool">
@@ -54,44 +74,43 @@
                 <option value="pressure-washer">Pressure Washer</option>
               </select>
             </div>
-  
+
             <div class="form-group">
               <label for="rental-date">Rental Date</label>
               <input type="date" id="rental-date" name="rental-date">
             </div>
-  
-            <div class="form-group">
-              <label for="rental-duration">Duration (days)</label>
-              <input type="number" id="rental-duration" name="rental-duration" min="1">
-            </div>
           </div>
-  
-          <div id="repair-fields" class="hidden">
-            <div class="form-group">
-              <label for="equipment">Equipment Type</label>
-              <input type="text" id="equipment" name="equipment">
-            </div>
-  
-            <div class="form-group">
-              <label for="issue">Describe the Issue</label>
-              <textarea id="issue" name="issue" rows="4"></textarea>
-            </div>
-  
-            <div class="form-group">
-              <label for="preferred-date">Preferred Service Date</label>
-              <input type="date" id="preferred-date" name="preferred-date">
-            </div>
-          </div>
-  
-          <button type="submit" class="btn">Submit Booking</button>
-        </form>
-      </main>
-  
-      <footer>
-        <p>© 2024 TapOn. All rights reserved.</p>
-        <p>Contact: info@tapon.com | Tel: (555) 123-4567</p>
-      </footer>
-    </body>
-  </html>
-  
 
+          <div class="form-group">
+            <label for="rental-duration">Duration (days)</label>
+            <input type="number" id="rental-duration" name="rental-duration" min="1">
+          </div>
+        </div>
+
+        <div id="repair-fields" class="hidden">
+          <div class="form-group">
+            <label for="equipment">Equipment Type</label>
+            <input type="text" id="equipment" name="equipment" placeholder="e.g., Power Drill, Lawn Mower">
+          </div>
+
+          <div class="form-group">
+            <label for="issue">Describe the Issue</label>
+            <textarea id="issue" name="issue" rows="4" placeholder="Please describe the problem you're experiencing..."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="preferred-date">Preferred Service Date</label>
+            <input type="date" id="preferred-date" name="preferred-date">
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-submit">Submit Booking</button>
+      </form>
+    </main>
+
+    <footer>
+      <p>© 2024 TapOn. All rights reserved.</p>
+      <p>Contact: info@tapon.com | Tel: (555) 123-4567</p>
+    </footer>
+  </body>
+</html>
